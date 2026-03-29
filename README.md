@@ -32,7 +32,8 @@ spotify-recommender/
 ├── api/
 │   ├── __init__.py
 │   └── routes.py            # FastAPI endpoints
-├── recommender.ipynb        # Exploration, EDA, and visualizations
+├── notebooks/
+│   └── recommender.ipynb    # Exploration, EDA, and visualizations
 ├── main.py                  # FastAPI app entry point
 ├── .env.example             # Environment variable template
 ├── .gitignore
