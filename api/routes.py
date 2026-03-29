@@ -27,10 +27,8 @@ def recommend(n: int = 10):
 """
 @router.get("/recommend/playlist/{playlist_id}")
 def recommend_from_playlist(playlist_id: str, n: int = 10):
-    """
     # Recommends songs based on the audio profile of a given playlist
     # May implement later; for now, not using playlist recommendations
-    """
     sp = get_spotify_client()
     results = sp.playlist_tracks(playlist_id)
     tracks = []
