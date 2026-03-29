@@ -17,10 +17,10 @@ def build_user_profile(tag_matrix):
 def get_candidates(tracks):
     """
     Builds a candidate pool using Last.fm similar tracks.
-    Uses top 3 tracks from the taste profile as seeds.
+    Uses top 10 tracks from the taste profile as seeds.
     """
     candidates = []
-    for track in tracks[:3]:
+    for track in tracks[:10]:
         similar = get_lastfm_similar_tracks(track['artist'], track['name'])
         candidates.extend(similar)
         time.sleep(0.25)

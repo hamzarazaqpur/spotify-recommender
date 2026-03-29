@@ -182,7 +182,7 @@ def get_lastfm_features(tracks, max_tags=5):
     return tag_matrix, mlb, track_tags
 
 
-def get_lastfm_similar_tracks(artist, track, limit=30):
+def get_lastfm_similar_tracks(artist, track, limit=100):
     """
     Gets similar tracks from Last.fm to use as recommendation candidates.
     Replaces Spotify's deprecated recommendations endpoint.
